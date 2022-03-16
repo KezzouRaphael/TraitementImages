@@ -77,6 +77,7 @@ namespace TraitementImages
                 ZoomDownbutton.BackColor = Color.Green;
                 SeuillageSimplebutton.BackColor = Color.Green;
                 MultiSeuillagebutton.BackColor = Color.Green;
+                buttonSaveImage.BackColor = Color.Green;
                 #endregion
             }
             #endregion
@@ -1703,6 +1704,17 @@ namespace TraitementImages
             
         }
         #endregion
+
+        private void buttonSaveImage_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog dialog = new SaveFileDialog();
+            dialog.Filter = "Bitmap Image (.bmp)|*.bmp|Gif Image (.gif)|*.gif|JPEG Image (.jpeg)|*.jpeg|Png Image (.png)|*.png|Tiff Image (.tiff)|*.tiff|Wmf Image (.wmf)|*.wmf";
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                ImgSrc.Image.Save(dialog.FileName);
+            }
+            buttonSaveImage.BackColor = Color.Green;
+        }
     }
 
 }

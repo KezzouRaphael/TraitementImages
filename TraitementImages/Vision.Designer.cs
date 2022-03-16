@@ -83,6 +83,7 @@
             this.numericUpDownDeviation = new System.Windows.Forms.NumericUpDown();
             this.labelGauss = new System.Windows.Forms.Label();
             this.buttonNegatif = new System.Windows.Forms.Button();
+            this.buttonSaveImage = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ImgDest)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgSrc)).BeginInit();
             this.panel1.SuspendLayout();
@@ -204,7 +205,7 @@
             // 
             // LongueurnumericUpDown
             // 
-            this.LongueurnumericUpDown.Location = new System.Drawing.Point(120, 607);
+            this.LongueurnumericUpDown.Location = new System.Drawing.Point(123, 644);
             this.LongueurnumericUpDown.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -228,7 +229,7 @@
             // labelTaille
             // 
             this.labelTaille.AutoSize = true;
-            this.labelTaille.Location = new System.Drawing.Point(9, 584);
+            this.labelTaille.Location = new System.Drawing.Point(12, 621);
             this.labelTaille.Name = "labelTaille";
             this.labelTaille.Size = new System.Drawing.Size(88, 13);
             this.labelTaille.TabIndex = 13;
@@ -236,7 +237,7 @@
             // 
             // LargeurnumericUpDown
             // 
-            this.LargeurnumericUpDown.Location = new System.Drawing.Point(120, 652);
+            this.LargeurnumericUpDown.Location = new System.Drawing.Point(123, 689);
             this.LargeurnumericUpDown.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -260,7 +261,7 @@
             // labelLargeur
             // 
             this.labelLargeur.AutoSize = true;
-            this.labelLargeur.Location = new System.Drawing.Point(9, 654);
+            this.labelLargeur.Location = new System.Drawing.Point(12, 691);
             this.labelLargeur.Name = "labelLargeur";
             this.labelLargeur.Size = new System.Drawing.Size(49, 13);
             this.labelLargeur.TabIndex = 15;
@@ -269,7 +270,7 @@
             // labelLongueur
             // 
             this.labelLongueur.AutoSize = true;
-            this.labelLongueur.Location = new System.Drawing.Point(9, 609);
+            this.labelLongueur.Location = new System.Drawing.Point(12, 646);
             this.labelLongueur.Name = "labelLongueur";
             this.labelLongueur.Size = new System.Drawing.Size(58, 13);
             this.labelLongueur.TabIndex = 16;
@@ -278,7 +279,7 @@
             // ChangerTaillebutton
             // 
             this.ChangerTaillebutton.BackColor = System.Drawing.Color.Red;
-            this.ChangerTaillebutton.Location = new System.Drawing.Point(266, 607);
+            this.ChangerTaillebutton.Location = new System.Drawing.Point(269, 644);
             this.ChangerTaillebutton.Name = "ChangerTaillebutton";
             this.ChangerTaillebutton.Size = new System.Drawing.Size(80, 64);
             this.ChangerTaillebutton.TabIndex = 17;
@@ -437,56 +438,56 @@
             // médianToolStripMenuItem
             // 
             this.médianToolStripMenuItem.Name = "médianToolStripMenuItem";
-            this.médianToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.médianToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.médianToolStripMenuItem.Text = "Médian";
             this.médianToolStripMenuItem.Click += new System.EventHandler(this.médianToolStripMenuItem_Click);
             // 
             // moyenneurToolStripMenuItem
             // 
             this.moyenneurToolStripMenuItem.Name = "moyenneurToolStripMenuItem";
-            this.moyenneurToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.moyenneurToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.moyenneurToolStripMenuItem.Text = "Moyenneur";
             this.moyenneurToolStripMenuItem.Click += new System.EventHandler(this.moyenneurToolStripMenuItem_Click);
             // 
             // gaussienToolStripMenuItem
             // 
             this.gaussienToolStripMenuItem.Name = "gaussienToolStripMenuItem";
-            this.gaussienToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.gaussienToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.gaussienToolStripMenuItem.Text = "Gaussien";
             this.gaussienToolStripMenuItem.Click += new System.EventHandler(this.gaussienToolStripMenuItem_Click);
             // 
             // laplacienToolStripMenuItem
             // 
             this.laplacienToolStripMenuItem.Name = "laplacienToolStripMenuItem";
-            this.laplacienToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.laplacienToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.laplacienToolStripMenuItem.Text = "Laplacien";
             this.laplacienToolStripMenuItem.Click += new System.EventHandler(this.laplacienToolStripMenuItem_Click);
             // 
             // kirshToolStripMenuItem
             // 
             this.kirshToolStripMenuItem.Name = "kirshToolStripMenuItem";
-            this.kirshToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.kirshToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.kirshToolStripMenuItem.Text = "Kirsh";
             this.kirshToolStripMenuItem.Click += new System.EventHandler(this.kirshToolStripMenuItem_Click);
             // 
             // sobelToolStripMenuItem
             // 
             this.sobelToolStripMenuItem.Name = "sobelToolStripMenuItem";
-            this.sobelToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.sobelToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.sobelToolStripMenuItem.Text = "Sobel";
             this.sobelToolStripMenuItem.Click += new System.EventHandler(this.sobelToolStripMenuItem_Click);
             // 
             // prewittToolStripMenuItem
             // 
             this.prewittToolStripMenuItem.Name = "prewittToolStripMenuItem";
-            this.prewittToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.prewittToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.prewittToolStripMenuItem.Text = "Prewitt";
             this.prewittToolStripMenuItem.Click += new System.EventHandler(this.prewittToolStripMenuItem_Click);
             // 
             // robertsToolStripMenuItem
             // 
             this.robertsToolStripMenuItem.Name = "robertsToolStripMenuItem";
-            this.robertsToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.robertsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.robertsToolStripMenuItem.Text = "Roberts";
             this.robertsToolStripMenuItem.Click += new System.EventHandler(this.robertsToolStripMenuItem_Click);
             // 
@@ -606,11 +607,23 @@
             this.buttonNegatif.UseVisualStyleBackColor = false;
             this.buttonNegatif.Click += new System.EventHandler(this.buttonNegatif_Click);
             // 
+            // buttonSaveImage
+            // 
+            this.buttonSaveImage.BackColor = System.Drawing.Color.Red;
+            this.buttonSaveImage.Location = new System.Drawing.Point(12, 577);
+            this.buttonSaveImage.Name = "buttonSaveImage";
+            this.buttonSaveImage.Size = new System.Drawing.Size(451, 23);
+            this.buttonSaveImage.TabIndex = 33;
+            this.buttonSaveImage.Text = "SAUVEGARDER L\'IMAGE";
+            this.buttonSaveImage.UseVisualStyleBackColor = false;
+            this.buttonSaveImage.Click += new System.EventHandler(this.buttonSaveImage_Click);
+            // 
             // Vision
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1290, 865);
+            this.Controls.Add(this.buttonSaveImage);
             this.Controls.Add(this.buttonNegatif);
             this.Controls.Add(this.labelGauss);
             this.Controls.Add(this.numericUpDownDeviation);
@@ -714,6 +727,7 @@
         private System.Windows.Forms.Button buttonNegatif;
         private System.Windows.Forms.ToolStripMenuItem affinageDesContoursToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem chainageDesContoursToolStripMenuItem;
+        private System.Windows.Forms.Button buttonSaveImage;
     }
 }
 
